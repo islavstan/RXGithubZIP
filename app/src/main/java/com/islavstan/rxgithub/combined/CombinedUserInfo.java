@@ -1,4 +1,4 @@
-package com.islavstan.rxgithub;
+package com.islavstan.rxgithub.combined;
 
 /**
  * Created by islav on 06.02.2017.

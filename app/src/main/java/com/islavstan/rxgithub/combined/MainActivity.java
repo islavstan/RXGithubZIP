@@ -1,8 +1,13 @@
-package com.islavstan.rxgithub;
+package com.islavstan.rxgithub.combined;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
+
+import com.islavstan.rxgithub.R;
+import com.islavstan.rxgithub.second_lesson.Main2Activity;
 
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
@@ -17,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     String loginName = "islavstan";
     String loginName2 = "MaxDubovoi";
-
+    Button nextActivityBtn;
     TextView login, email, public_repos, public_gists, login2, email2, public_repos2, public_gists2;
 
     @Override
@@ -25,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        nextActivityBtn = (Button) findViewById(R.id.nextActivityBtn);
+
+        nextActivityBtn.setOnClickListener(v-> startActivity(new Intent(MainActivity.this, Main2Activity.class)));
 
         login = (TextView) findViewById(R.id.login);
         email = (TextView) findViewById(R.id.email);

@@ -1,4 +1,4 @@
-package com.islavstan.rxgithub;
+package com.islavstan.rxgithub.combined;
 
 import com.google.gson.annotations.SerializedName;
 

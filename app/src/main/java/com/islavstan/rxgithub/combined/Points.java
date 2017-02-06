@@ -1,6 +1,5 @@
-package com.islavstan.rxgithub;
+package com.islavstan.rxgithub.combined;
 
-import com.google.gson.JsonArray;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
 import rx.Observable;
